@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <title>SeaRates</title>
+</head>
+<body>
+        <div class="gradient">
+            <section class="integrations">
+                <div class="container">
+                    <div class="tittle-arrow">
+                        <h1>API & Web Integrations</h1>
+                        <img class="arrow" src="photos/arrow.svg" alt="">
+                    </div>
+                    <div class="select-arrows">
+                        <div class="select">
+                            <select id="selectElement"></select>
+                            <img class="selectIcon" src="photos/selectIcon.svg" alt="">
+                        </div>
+                        
+                        <div class="arrows">
+                            <div class="swiper-button-prev gfgd"></div>
+                            <div class="swiper-button-next gfgd"></div>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+            <section class="type-programm-swiper">
+                <div class="container slider-container">
+                    <div class="type-programm">
+                        <p class="tools">Tools</p>
+                        <button class="items-type-programm active" data-app-name="logisticsExplorer">
+                            <img src="./photos/le-icon.svg" alt="Icon-1" style="width: 20px; height: 20px;">
+                            <p>Logistics Explorer</p>
+                        </button>
+                        <button class="items-type-programm" data-app-name="trackingSystem">
+                            <img src="./photos/le-icon-1.svg" alt="Icon-2" style="width: 20px; height: 20px;">
+                            <p>Tracking System</p>
+                        </button>
+                        <button class="items-type-programm" data-app-name="shipShedules">
+                            <img src="./photos/le-icon-2.svg" alt="Icon-3" style="width: 20px; height: 20px;">
+                            <p>Ship Shedules</p>
+                        </button>
+                        <button class="items-type-programm" data-app-name="loadCalculator">
+                            <img src="./photos/le-icon-3.svg" alt="Icon-4" style="width: 20px; height: 20px;">
+                            <p>Load Сalculator</p>
+                        </button>
+                        <button class="items-type-programm" data-app-name="distanceTime">
+                            <img src="./photos/Distance.svg" alt="Icon-5" style="width: 20px; height: 20px;">
+                            <p>Distance & Time</p>
+                        </button>
+                        <div>
+                            <p class="packages">PACKAGES</p>
+                            <button class="items-type-programm" data-app-name="dfaMembership">
+                                <img src="./photos/Membership.svg" alt="Icon-5" style="width: 20px; height: 20px;">
+                                <p>DFA Membership</p>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="swiper-description">
+                        <div class="swiper mySwiper">
+                            <div div class="swiper-wrapper"></div>
+                           
+                        </div>
+                        <div class="description-program">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="other-features">
+            <div></div>
+           <div id="other-features" class="swiper mySwiper swiperOther">
+                <h2 class="title-other-features">Other features</h2>
+                <div class="swiper-wrapper wraper-other"></div>
+          </div> 
+        </section>
+        
+    <script src="js/code.js"></script>
+</body>
+</html>
