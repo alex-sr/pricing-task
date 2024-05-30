@@ -43,16 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  const swiperOtherElement = new Swiper('.swiperOther', {
-    // pagination: {
-    // clickable: true,
-    // },
+  new Swiper('.swiperOther', {
     breakpoints: {
       375: {
         slidesPerView: 'auto',
         initialSlide: 0,
         spaceBetween: 16,
-        // slidesOffsetBefore: 255,
         slidesOffsetAfter: 110,
       },
       768: {
@@ -60,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
         initialSlide: 0,
         spaceBetween: 16,
         slidesOffsetAfter: 186,
-        // slidesOffsetBefore: 304,
       },
       1200: {
         slidesPerView: 'auto',
@@ -68,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 16,
         allowSlideNext: false,
         allowSlidePrev: false,
-        // slidesOffsetBefore: 865,
       },
     },
   });
@@ -124,9 +118,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   };
 
-  let counter = 0;
-  let mult = 0;
-
   const onRenderCards = (option) => {
     if (option) {
       removeSlides();
@@ -134,9 +125,9 @@ document.addEventListener('DOMContentLoaded', function () {
       const buttonInc = document.getElementById('butt-increment');
       const counterElement = document.getElementById('counter');
       if (buttonDec && buttonInc && counterElement) {
-        buttonDec.removeEventListener('click', decCounter);
-        buttonInc.removeEventListener('click', incCounter);
-        counterElement.removeEventListener('input', onCounterEl);
+        buttonDec.removeEventListener('click', cardsDataController.decrementCounter);
+        buttonInc.removeEventListener('click', cardsDataController.incrementCounter);
+        counterElement.removeEventListener('input', cardsDataController.onCounterInput);
       }
     }
     const currentApp = option || 'logisticsExplorer';
@@ -157,16 +148,16 @@ document.addEventListener('DOMContentLoaded', function () {
       `;
       swiperContainer.insertAdjacentHTML('beforeend', cardHTML);
     });
-    counterPriceForProgram(option);
+    cardsDataController.defineAppPrice(option);
     addClickListenerToLinks();
     if (option) {
       const buttonDec = document.getElementById('butt-decrement');
       const buttonInc = document.getElementById('butt-increment');
       const counterElement = document.getElementById('counter');
       if (buttonDec && buttonInc && counterElement) {
-        buttonDec.addEventListener('click', decCounter);
-        buttonInc.addEventListener('click', incCounter);
-        counterElement.addEventListener('input', onCounterEl);
+        buttonDec.addEventListener('click', cardsDataController.decrementCounter);
+        buttonInc.addEventListener('click', cardsDataController.incrementCounter);
+        counterElement.addEventListener('input', cardsDataController.onCounterInput);
       }
     }
   };
@@ -177,34 +168,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     const currentApp = option || 'logisticsExplorer';
     descriptionContainer.insertAdjacentHTML('beforeend', programDescriptionData[currentApp]);
-  };
-
-  // const updateSwiperOffsetOther = (option) => {
-  //   if (option === 'dfaMembership') {
-  //     swiperOtherElement.params.slidesOffsetBefore = 0;
-  //   } else {
-  //     swiperOtherElement.params.slidesOffsetBefore = 600;
-  //   }
-
-  //   swiperOtherElement.update();
-  // };
-
-  const counterPriceForProgram = (option) => {
-    switch (option) {
-      case 'trackingSystem':
-        mult = 2;
-        break;
-      case 'shipShedules':
-        mult = 0.5;
-        break;
-      case 'loadCalculator':
-        mult = 0.4;
-        break;
-      case 'distanceTime':
-        mult = 0.3;
-        break;
-    }
-    counter = 0;
   };
 
   const onRenderCardsOther = (option) => {
@@ -229,16 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
       `;
       swiperOtherContainer.insertAdjacentHTML('beforeend', cardHTML);
     });
-
-    // updateSwiperOffsetOther(option);
   };
-
-  // swiperOtherContainer.logisticsExplorer.forEach(el=>{
-  //   const cardOtherData = `<div class="swiper-slide-other">
-  //         <h1>Hello</h1>
-  //   </div>`;
-  //   swiperOtherContainer.insertAdjacentElement('beforeend', cardOtherData)
-  // })
 
   const selectElement = document.getElementById('selectElement');
 
@@ -251,55 +205,4 @@ document.addEventListener('DOMContentLoaded', function () {
   onRenderCards();
   onRenderCardsOther();
   onRenderDescription();
-
-  const onCounterEl = (e) => {
-    //const counterElement = document.getElementById('counter');
-    const value = parseInt(e.target.value);
-    if (value) {
-      if (value > 100) return;
-      counter = value;
-      e.value = value;
-    } else {
-      counter = 0;
-    }
-    updateCounter();
-  };
-
-  const decCounter = () => {
-    if (counter > 0) {
-      counter--;
-      updateCounter();
-    }
-  };
-
-  const incCounter = () => {
-    counter++;
-    updateCounter();
-  };
-
-  const updateCounter = () => {
-    const counterElement = document.getElementById('counter');
-    if (counterElement) {
-      counterElement.value = counter;
-
-      cardsDataController.res = (counter * mult).toFixed(1).replace(/\.?0*$/, '');
-      updatePrice();
-    }
-  };
-
-  const updatePrice = () => {
-    const priceElementMin = document.getElementById('price-min');
-    if (priceElementMin) {
-      priceElementMin.textContent = `USD ${cardsDataController.res}`;
-    }
-    const priceElementMax = document.getElementById('price-max');
-    if (priceElementMax) {
-      priceElementMax.textContent = `USD ${cardsDataController.res}`;
-    }
-  };
 });
-
-// ${(() => {
-//   if(!el.typeTransportation) return "";
-//   return `<div class="type-delivery">${el.typeTransportation}</div>`
-// })()}
