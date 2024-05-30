@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
           375: {
               slidesPerView: 'auto',
               initialSlide: 0,
+              slidesOffsetBefore: 100,
               // slidesOffsetAfter: 1010,
               spaceBetween: 16,
           },
@@ -179,6 +180,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
+  const addClickListenerToLinks = () => {
+    const allLinks = document.querySelectorAll('.href-features');
+    const blockOther = document.getElementById('other-features');
+    allLinks.forEach(linksElement =>{
+      linksElement.addEventListener('click', function(e){
+        e.preventDefault();
+        console.log("Hello")
+        blockOther.scrollIntoView({ behavior: 'smooth' });
+      })
+    })
+  }
+  
   let counter = 0;
   let mult = 0;
   let res = 0;
@@ -243,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
-                                  <p>Customizable search filter widget on your main page</p>
+                                  <p>Customizable search filter w...</p>
                               </div>
 
                               <div class="items-description-integration hidden-or-visible">
@@ -267,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p>Carbon emissions estimation</p>
                             </div>
 
-                              <a href="#other-features" class="href-features">See all features</a>
+                              <a href="#" class="href-features">See all features</a>
                             </div>
                             `,
             buttonText: '<a href="https://www.searates.com/integrations/logistics-explorer" class="card-ref">How it works?</a>',
@@ -301,9 +314,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
                                 <p>More than 10M rates from more than 7000 loigistics providers</p>
                             </div>
-                            <div class="items-description-api">
+                            <div class="items-description-api ">
                               <img src="img/icons/Selected.svg" alt="Icon-2">
-                              <p>Segment and structure needed shipping and hub sections</p>
+                              <p>Segment and structure needed shipping ...</p>
                             </div>
                             <div class="items-description-api hidden-or-visible">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
@@ -318,7 +331,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
                                 <p>Create your own mobile appli... </p>
                             </div>
-                            <a href="#other-features" class="href-features">See all features</a>
+                            <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: '<a href="https://www.searates.com/integrations/logistics-explorer" class="card-ref">How it works?</a>',
@@ -353,7 +366,7 @@ document.addEventListener("DOMContentLoaded", function() {
                               <div class="counter-price">
                                 <div class="counter">
                                   <button class="butt-decrement" id="butt-decrement">-</button>
-                                  <input class="input-count" id="counter" value="${counter}"/>
+                                  <input class="input-count" type="number" id="counter" min="1" max="100"/>
                                   <button class="butt-increment" id="butt-increment">+</button>
                                 </div> 
                                 <span class="price" id="price-min">USD ${res}</span>
@@ -425,7 +438,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p>View detailed information on voyages</p>
                             </div>
 
-                              <a href="#other-features" class="href-features">See all features</a>
+                              <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: '<a href="https://www.searates.com/services/learn-more" class="card-ref">How it works?</a>',
@@ -481,7 +494,7 @@ document.addEventListener("DOMContentLoaded", function() {
                               <p>Get detailed parameters on transit time, transhipments</p>
                             </div>
                           
-                            <a href="#other-features" class="href-features">See all features</a>
+                            <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: '<a href="https://www.searates.com/reference/api-tracking-system" class="card-ref">How it works?</a>',
@@ -587,8 +600,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
                                 <p>View detailed information on voyages</p>
                             </div>
-                            
-                              <a href="#other-features" class="href-features">See all features</a>
+                              <a href="#" class="href-features">See all features</a>
                             </div>
                             `,
             buttonText: '<a href="https://www.searates.com/services/schedules" class="card-ref">How it works?</a>',
@@ -644,7 +656,7 @@ document.addEventListener("DOMContentLoaded", function() {
                               <img src="img/icons/Selected.svg" alt="Icon-2">
                               <p>Get detailed information on v...</p>
                             </div>
-                            <a href="#other-features" class="href-features">See all features</a>
+                            <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: '<a href="https://www.searates.com/reference/api-ship-schedule" class="card-ref">How it works?</a>',
@@ -759,7 +771,7 @@ document.addEventListener("DOMContentLoaded", function() {
                               <p>Palletizing option</p>
                             </div>
                             
-                            <a href="#other-features" class="href-features">See all features</a>
+                            <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: '<a href="https://www.searates.com/reference/load-calc-about" class="card-ref">How it works?</a>',
@@ -814,7 +826,7 @@ document.addEventListener("DOMContentLoaded", function() {
                               <img src="img/icons/Selected.svg" alt="Icon-2">
                               <p>Different container & vehicle types</p>
                             </div>
-                            <a href="#other-features" class="href-features">See all features</a>
+                            <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: '<a href="https://www.searates.com/integrations/api-load-calculator/" class="card-ref">How it works?</a>',
@@ -920,7 +932,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p>Tracking analytics from Carriers</p>
                             </div>
                             
-                            <a href="#other-features" class="href-features">See all features</a>
+                            <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: '<a href="https://www.searates.com/services/distances-time" class="card-ref">How it works?</a>',
@@ -972,7 +984,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p>Advanced autocomplete & geocoding</p>
                             </div>
                           
-                            <a href="#other-features" class="href-features">See all features</a>
+                            <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: '<a href="https://www.searates.com/reference/api-distances-time" class="card-ref">How it works?</a>',
@@ -1092,7 +1104,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <p>Tracking analytics from Carriers</p>
                             </div>
                             
-                            <a href="#other-features" class="href-features">See all features</a>
+                            <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
             buttonText: 'How it works?',
@@ -1647,6 +1659,7 @@ document.addEventListener("DOMContentLoaded", function() {
       swiperContainer.insertAdjacentHTML('beforeend', cardHTML);
     })
     counterPriceForProgram(option);
+    addClickListenerToLinks();
     if(option){
       const buttonDec = document.getElementById('butt-decrement');
       const buttonInc = document.getElementById('butt-increment');
@@ -1678,9 +1691,25 @@ document.addEventListener("DOMContentLoaded", function() {
   const updateSwiperOffsetOther = (option) => {
     if (option === 'dfaMembership') {
         swiperOtherElement.params.slidesOffsetBefore = 0;
-    } else {
-        swiperOtherElement.params.slidesOffsetBefore = 600;
     }
+    else{
+      swiperOtherElement.params.slidesOffsetBefore = 600;
+    } 
+    // if(window.innerWidth >= 375){
+    //   swiperOtherElement.params.slidesOffsetBefore = 260;
+    // }
+    // if(window.innerWidth>= 768){
+    //   swiperOtherElement.params.slidesOffsetBefore = 620;
+    // }
+    // else {
+    //     if (window.innerWidth >= 375) {
+    //         //swiperOtherElement.params.slidesOffsetBefore = 260;
+    //     }
+    //     // } else {
+    //     //     swiperOtherElement.params.slidesOffsetBefore = 600;
+    //     // }
+    //     swiperOtherElement.params.slidesOffsetBefore = 600;
+    // }
     swiperOtherElement.update();
   }
 
@@ -1766,10 +1795,14 @@ document.addEventListener("DOMContentLoaded", function() {
   onRenderDescription();
 
   const onCounterEl = (e) => {
-      if (e.target.value !== "") { 
-        counter = parseInt(e.target.value);
+      //const counterElement = document.getElementById('counter');
+      const value = parseInt(e.target.value);
+      if (value) { 
+        if(value > 100) return;
+        counter = value;
+        e.value = value;
       } else {
-        counter = "";
+        counter = 0;
       }
       updateCounter();
   }
@@ -1807,7 +1840,12 @@ document.addEventListener("DOMContentLoaded", function() {
       priceElementMax.textContent = `USD ${res}`;
     }
   }
+
+ 
+  
+
 });
+
 // ${(() => {
 //   if(!el.typeTransportation) return "";
 //   return `<div class="type-delivery">${el.typeTransportation}</div>`

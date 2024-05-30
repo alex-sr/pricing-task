@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 
-html,body{
+body{
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 400;
 
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 img{
@@ -100,7 +100,7 @@ button{
 //// select styles end
 
 .integrations, .column-card{
-    padding: 24px 16px;
+    padding: 24px 16px 0;
 }
 
 .tittle-arrow h1{
@@ -120,13 +120,10 @@ button{
     background: var(--Grey-Winter, #FFF);
 }
 
-.swiper-description{
-    margin-left: 16px;
-}
-
 .swiper-wrapper,
 .swiper-wrapper-other{
     display: flex;
+    padding: 0 16px 16px 16px;
     
 }
 
@@ -377,7 +374,7 @@ button{
 
 .description-program{
     max-width: 896px;
-    margin-top: 24px;
+    padding: 8px 16px;
 }
 
 .text-description{
@@ -464,6 +461,10 @@ button{
     .title-other-features{
         margin-bottom: 24px;
     }
+
+    .integrations, .column-card{
+        padding: 16px;
+    }
     //  .description-logistics-explorer{
     //     max-width: 342px;
     // }
@@ -511,9 +512,14 @@ button{
         margin-left: 0;
     }
 
+    // .swiper-wrapper, .swiper-wrapper-other {
+    //     padding: 0 16px;
+    // }
     .description-logistics-explorer{
-        max-width: 896px;
+        // max-width: 896px;
+        width: 928px;
     }
+
     .type-programm-swiper{
         margin-top: 40px;
     }
@@ -525,11 +531,14 @@ button{
     .type-programm{
         display: block;
         flex-direction: column;
-        margin-right: 24px;
+        margin-right: 8px;
         width: 250px;
         cursor: pointer;
     }
 
+    .type-programm ul li:not(:last-child){
+        margin-bottom: 8px;
+    }
     .tools{
         margin-bottom: 8px;
         padding: 0 16px;
@@ -537,6 +546,7 @@ button{
 
     .tools,
     .packages{
+        cursor: default;
         font-size: 10px;
         font-weight: 700;
         color: #9EA9B9;
@@ -551,7 +561,7 @@ button{
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        padding: 8px 10px;
+        padding: 8px 16px;
         border-radius: 50px;
         background: rgba(236, 236, 236, 0.4);
         box-shadow: 0px 4px 15px 0px rgba(58, 112, 191, 0.10);
@@ -579,6 +589,7 @@ button{
     }
 
     .mySwiper{
-        width: 896px;
+        // padding: 0 16px;
+        width: 928px;
     }
 }
