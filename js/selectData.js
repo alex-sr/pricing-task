@@ -8,7 +8,7 @@ export const selectData = [
     label: '<img src="img/icons/le-icon-1.svg" alt="Icon-2" style="width: 24px; height: 24px;"><p>Tracking System</p>',
   },
   {
-    value: 'shipShedules',
+    value: 'shipSchedule',
     label: '<img src="img/icons/le-icon-2.svg" alt="Icon-3" style="width: 24px; height: 24px;"><p>Ship Shedules</p>',
   },
   {

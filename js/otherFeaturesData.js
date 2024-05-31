@@ -193,7 +193,7 @@ export const otherFeaturesData = {
                     </div>`,
     },
   ],
-  shipShedules: [
+  shipSchedule: [
     {
       title: 'Web integration',
       description: `<div class="wrapper-items-description">

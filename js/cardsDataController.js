@@ -1,8 +1,17 @@
-const appPriceMap = {
+export const appPriceMap = {
   trackingSystem: { price: 2, maxCounterValue: 100, minCounterValue: 4 },
-  shipShedules: { price: 0.5, maxCounterValue: 500, minCounterValue: 0 },
-  loadCalculator: { price: 0.4, maxCounterValue: 500, minCounterValue: 0 },
-  distanceTime: { price: 0.3, maxCounterValue: 500, minCounterValue: 0 },
+  shipSchedule: { price: 0.5, maxCounterValue: 500, minCounterValue: 50 },
+  loadCalculator: { price: 0.4, maxCounterValue: 500, minCounterValue: 20 },
+  distanceTime: { price: 0.3, maxCounterValue: 500, minCounterValue: 20 },
+};
+
+const appUrlHashMap = {
+  logisticsExplorer: 'explorer',
+  trackingSystem: 'tracking',
+  shipSchedule: 'schedule',
+  loadCalculator: 'calc',
+  distanceTime: 'distances-time',
+  dfaMembership: 'dfa-membership',
 };
 
 class CardsDataController {
@@ -12,6 +21,7 @@ class CardsDataController {
   inputCounterElement = null;
   inputMaxValue = 100;
   inputMinValue = 0;
+  activeApp = null;
 
   constructor() {}
 
@@ -31,14 +41,46 @@ class CardsDataController {
     this.counter = value;
   }
 
-  defineAppPrice = (app) => {
-    this.counter = 0;
+  get activeApp() {
+    return this.activeApp;
+  }
+
+  set activeApp(value) {
+    this.activeApp = value;
+  }
+
+  defineApp = () => {
+    if (!this.activeApp) {
+      this.activeApp = this.getHashFromUrl() || 'logisticsExplorer';
+    }
+    this.updateUrl();
+    this.counter = this.getAppMinCounterValue();
     this.res = 0;
-    if (!appPriceMap[app]) return;
-    this.price = appPriceMap[app].price;
-    this.inputMaxValue = appPriceMap[app].maxCounterValue;
-    this.inputMinValue = appPriceMap[app].minCounterValue;
+    if (!appPriceMap[this.activeApp]) return;
+    this.price = appPriceMap[this.activeApp].price;
+    this.inputMaxValue = appPriceMap[this.activeApp].maxCounterValue;
+    this.inputMinValue = this.getAppMinCounterValue();
     this.inputCounterElement = document.getElementById('counter');
+    this.updateCounter();
+  };
+
+  getHashFromUrl = () => {
+    const appUrlHashMapReversed = Object.entries(appUrlHashMap).reduce((acc, [key, value]) => {
+      acc[value] = key;
+      return acc;
+    }, {});
+    return appUrlHashMapReversed[window.location.hash.slice(1)];
+  };
+
+  getAppMinCounterValue = () => {
+    if (!appPriceMap[this.activeApp]) return 0;
+    return appPriceMap[this.activeApp].minCounterValue;
+  };
+
+  updateUrl = () => {
+    let url = new URL(window.location.href);
+    url.hash = appUrlHashMap[this.activeApp];
+    history.replaceState({}, '', url);
   };
 
   updateCounter = () => {
@@ -63,7 +105,7 @@ class CardsDataController {
       }
       this.counter = value;
     } else {
-      this.counter = this.inputMinValue;
+      this.counter = 0;
     }
     this.updateCounter();
   };

@@ -1,5 +1,5 @@
 import { cardsData } from './js/cardsData.js';
-import { cardsDataController } from './js/cardsDataController.js';
+import { cardsDataController, appPriceMap } from './js/cardsDataController.js';
 import { otherFeaturesData } from './js/otherFeaturesData.js';
 import { programDescriptionData } from './js/programDescriptionData.js';
 import { selectData } from './js/selectData.js';
@@ -67,15 +67,24 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  const onInitActiveButton = () => {
+    const activeButton = document.querySelector(`[data-app-name="${cardsDataController.activeApp}"]`);
+    if (!activeButton) return;
+    activeButton.classList.add('active');
+  };
+
   const buttonList = document.querySelectorAll('.items-type-program');
 
   buttonList.forEach((item) => {
     item.addEventListener('click', (e) => {
-      buttonList.forEach((otherItem) => otherItem.classList.remove('active'));
+      buttonList.forEach((otherItem) => {
+        otherItem.classList.remove('active');
+      });
       item.classList.add('active');
-      onRenderCards(e.currentTarget.dataset.appName);
-      onRenderCardsOther(e.currentTarget.dataset.appName);
-      onRenderDescription(e.currentTarget.dataset.appName);
+      cardsDataController.activeApp = e.currentTarget.dataset.appName;
+      onRenderCards();
+      onRenderCardsOther();
+      onRenderDescription();
     });
   });
 
@@ -118,8 +127,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   };
 
-  const onRenderCards = (option) => {
-    if (option) {
+  const onRenderCards = () => {
+    if (cardsDataController.activeApp) {
       removeSlides();
       const buttonDec = document.getElementById('butt-decrement');
       const buttonInc = document.getElementById('butt-increment');
@@ -130,8 +139,8 @@ document.addEventListener('DOMContentLoaded', function () {
         counterElement.removeEventListener('input', cardsDataController.onCounterInput);
       }
     }
-    const currentApp = option || 'logisticsExplorer';
-    cardsData[currentApp].forEach((el) => {
+
+    cardsData[cardsDataController.activeApp].forEach((el) => {
       const cardHTML = `
           <div class="swiper-slide ${el.cardClass}">
               <p class="card-tittle">${el.title}</p>
@@ -148,12 +157,13 @@ document.addEventListener('DOMContentLoaded', function () {
       `;
       swiperContainer.insertAdjacentHTML('beforeend', cardHTML);
     });
-    cardsDataController.defineAppPrice(option);
+    cardsDataController.defineApp(cardsDataController.activeApp);
     addClickListenerToLinks();
-    if (option) {
+    if (appPriceMap[cardsDataController.activeApp]) {
       const buttonDec = document.getElementById('butt-decrement');
       const buttonInc = document.getElementById('butt-increment');
       const counterElement = document.getElementById('counter');
+      counterElement.value = cardsDataController.getAppMinCounterValue();
       if (buttonDec && buttonInc && counterElement) {
         buttonDec.addEventListener('click', cardsDataController.decrementCounter);
         buttonInc.addEventListener('click', cardsDataController.incrementCounter);
@@ -162,25 +172,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  const onRenderDescription = (option) => {
-    if (option) {
+  const onRenderDescription = () => {
+    if (cardsDataController.activeApp) {
       removeDescriptionAboutProgram();
     }
-    const currentApp = option || 'logisticsExplorer';
-    descriptionContainer.insertAdjacentHTML('beforeend', programDescriptionData[currentApp]);
+    descriptionContainer.insertAdjacentHTML('beforeend', programDescriptionData[cardsDataController.activeApp]);
   };
 
-  const onRenderCardsOther = (option) => {
-    if (option) {
+  const onRenderCardsOther = () => {
+    if (cardsDataController.activeApp) {
       removeSlidesOther();
     }
 
-    const currentApp = option || 'logisticsExplorer';
-    if (currentApp !== 'dfaMembership') {
+    if (cardsDataController.activeApp !== 'dfaMembership') {
       const hiddenSlide = '<div class="swiper-slide hidden-slide"></div>';
       swiperOtherContainer.insertAdjacentHTML('beforeend', hiddenSlide);
     }
-    otherFeaturesData[currentApp].forEach((el) => {
+    otherFeaturesData[cardsDataController.activeApp].forEach((el) => {
       const cardHTML = `
           <div class="swiper-slide ${el.cardClass}">
               <p class="card-tittle">${el.title}</p>
@@ -197,12 +205,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const selectElement = document.getElementById('selectElement');
 
   selectElement.addEventListener('change', (e) => {
-    onRenderCards(e.detail.value);
-    onRenderCardsOther(e.detail.value);
-    onRenderDescription(e.detail.value);
+    cardsDataController.activeApp = e.detail.value;
+    onRenderCards();
+    onRenderCardsOther();
+    onRenderDescription();
   });
 
+  cardsDataController.defineApp();
   onRenderCards();
   onRenderCardsOther();
   onRenderDescription();
+  onInitActiveButton();
 });

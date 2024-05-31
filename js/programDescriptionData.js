@@ -10,7 +10,7 @@ export const programDescriptionData = {
                           </p>
   `,
 
-  shipShedules: `
+  shipSchedule: `
           <p class="text-description"> <b>Schedules system</b> allows you to get instant sailing itineraries for vessels of multiple shipping lines together with full associated details. The application is available either for web-integration or in API format. <a href="https://www.searates.com/reference/api-ship-schedule">Learn more </a></p>
           `,
 

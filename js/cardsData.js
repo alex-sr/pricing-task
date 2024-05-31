@@ -169,7 +169,7 @@ export const cardsData = {
                 <div class="counter-price">
                 <div class="counter">
                     <button class="butt-decrement" id="butt-decrement">-</button>
-                    <input class="input-count" type="number" id="counter" min="1" max="100" value="${cardsDataController.counter}"/>
+                    <input class="input-count" type="number" id="counter" min="1" max="100" value="0"/>
                     <button class="butt-increment" id="butt-increment">+</button>
                 </div> 
                 <span class="price" id="price-min">USD ${cardsDataController.res}</span>
@@ -311,7 +311,7 @@ export const cardsData = {
                     `,
     },
   ],
-  shipShedules: [
+  shipSchedule: [
     {
       title: 'Web access',
       buttonText:
@@ -331,7 +331,7 @@ export const cardsData = {
                               <div class="counter-price">
                                 <div class="counter">
                                   <button class="butt-decrement" id="butt-decrement">-</button>
-                                  <input class="input-count" id="counter" value="${cardsDataController.counter}"/>
+                                  <input class="input-count" type="number" id="counter" value="0"/>
                                   <button class="butt-increment" id="butt-increment">+</button>
                                 </div> 
                                 <span class="price" id="price-min">USD ${cardsDataController.res}</span>
@@ -491,7 +491,7 @@ export const cardsData = {
                               <div class="counter-price">
                                 <div class="counter">
                                   <button class="butt-decrement" id="butt-decrement">-</button>
-                                  <input class="input-count" id="counter" value="${cardsDataController.counter}"/>
+                                  <input class="input-count" type="number" id="counter" value="0"/>
                                   <button class="butt-increment" id="butt-increment">+</button>
                                 </div> 
                                 <span class="price" id="price-min">USD ${cardsDataController.res}</span>
@@ -663,7 +663,7 @@ export const cardsData = {
                               <div class="counter-price">
                                 <div class="counter">
                                   <button class="butt-decrement" id="butt-decrement">-</button>
-                                  <input class="input-count" id="counter" value="${cardsDataController.counter}"/>
+                                  <input class="input-count" type="number" id="counter" value="0"/>
                                   <button class="butt-increment" id="butt-increment">+</button>
                                 </div> 
                                 <span class="price" id="price-min">USD ${cardsDataController.res}</span>
