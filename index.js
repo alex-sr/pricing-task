@@ -6,7 +6,7 @@ import { selectData } from './js/selectData.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   // choices initialization
-  new Choices('#selectElement', {
+  const choices = new Choices('#selectElement', {
     choices: selectData,
     searchEnabled: false,
     itemSelectText: '',
@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const activeButton = document.querySelector(`[data-app-name="${cardsDataController.activeApp}"]`);
     if (!activeButton) return;
     activeButton.classList.add('active');
+    choices.setChoiceByValue(cardsDataController.activeApp);
   };
 
   const buttonList = document.querySelectorAll('.items-type-program');
