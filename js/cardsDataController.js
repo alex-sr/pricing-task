@@ -88,7 +88,22 @@ class CardsDataController {
       this.updateInputCounterElementValue(this.counter);
       this.res = (this.counter * this.price).toFixed(1).replace(/\.?0*$/, '');
       this.updatePriceElements();
+      ////////
+      this.togglePayButton();
     }
+  };
+
+  togglePayButton = () => {
+    const buttonPay = document.querySelectorAll('.button-pay');
+    buttonPay.forEach((button) => {
+      if (this.counter < this.inputMinValue) {
+        button.disabled = true;
+        button.style.cursor = 'not-allowed';
+      } else {
+        button.disabled = false;
+        button.style.cursor = 'pointer';
+      }
+    });
   };
 
   updateInputCounterElementValue = (value) => {

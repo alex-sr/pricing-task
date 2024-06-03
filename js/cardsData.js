@@ -33,9 +33,9 @@ export const cardsData = {
       description: `  
         <div class="wrapper-items-description">
             <div class="items-description-integration">
-            <img src="img/icons/Selected.svg" alt="Icon-2">
-            <p>Freight Calculator under 
-            brand & logo</p>
+              <img src="img/icons/Selected.svg" alt="Icon-2">
+              <p>Freight Calculator under 
+              brand & logo</p>
             </div>
             
             <div class="items-description-integration">
@@ -118,7 +118,7 @@ export const cardsData = {
         </div>
         <div class="items-description-api ">
             <img src="img/icons/Selected.svg" alt="Icon-2">
-            <p>Segment and structure needed shipping ...</p>
+            <p>Segment and structure needed shipping and...</p>
         </div>
         <div class="items-description-api hidden-or-visible">
             <img src="img/icons/Selected.svg" alt="Icon-2">
@@ -184,7 +184,7 @@ export const cardsData = {
             <span id="price-max">USD ${cardsDataController.res}</span>
             <p class="per-month">per month</p>
         </div>
-        <a class="butt-start">Pay</a>
+        <a class="butt-start button-pay">Pay</a>
         <div class="ref-contact">
             <a href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact for more</a>
             <img src="img/icons/arrow-black.svg" alt="">
@@ -320,10 +320,6 @@ export const cardsData = {
                             <p>Register your profile with Searates to make 50 free searches of the schedules per month (but not more than 5 per day).</p>
                             <p class="hidden-or-visible">To get more credits, annual packages, corporate subscription terms and SLA, please contact us.</p>
                             <div class="description-counter">
-                              <div class="items-description-access hidden-or-visible">
-                                <img src="img/icons/Selected.svg" alt=""/>
-                                <p>More credits, annual packages, corporate subscriptions and SLA can be paid on agreement. </p>
-                              </div>
                               <div class="items-description-access">
                                 <img src="img/icons/Selected.svg" alt=""/>
                                 <p>From 50 up to 500 lookups are available without daily limits and can be purchased online here</p>
@@ -346,7 +342,7 @@ export const cardsData = {
                         <span id="price-max">USD ${cardsDataController.res}</span>
                         <p class="per-month">per month</p>
                       </div>
-                      <a class="butt-start">Pay</a>
+                      <a class="butt-start button-pay">Pay</a>
                       <div class="ref-contact">
                         <a href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
@@ -480,13 +476,9 @@ export const cardsData = {
                             <p>Register your account to make up to 20 stuffing calculations per month for free (no more than 3 per day)</p>
                             <p class="hidden-or-visible">To get more credits, annual packages, corporate subscription terms and SLA, please contact us.</p>
                             <div class="description-counter">
-                              <div class="items-description-access hidden-or-visible">
-                                <img src="img/icons/Selected.svg" alt=""/>
-                                <p>From 20 up to 500 calculations are available without daily limits and can be purchased online here</p>
-                              </div>
                               <div class="items-description-access">
                                 <img src="img/icons/Selected.svg" alt=""/>
-                                <p>Users who need to do up to 500 calculations per month without daily limits can purchase subscription here</p>
+                                <p>From 20 up to 500 calculations are available without daily limits and can be purchased online here</p>
                               </div>
                               <div class="counter-price">
                                 <div class="counter">
@@ -506,7 +498,7 @@ export const cardsData = {
                         <span id="price-max">USD ${cardsDataController.res}</span>
                         <p class="per-month">per month</p>
                       </div>
-                      <button class="butt-start">Pay</button>
+                      <a class="butt-start button-pay">Pay</a>
                       <div class="ref-contact">
                         <a href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
@@ -600,33 +592,37 @@ export const cardsData = {
                             </div>
                             <div class="items-description-api">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
+                                <p>Create your mobile application</p>
+                            </div>
+                            <div class="items-description-api">
+                                <img src="img/icons/Selected.svg" alt="Icon-2">
                                 <p>Automate optimization of your supply chain</p>
                             </div>
                             <div class="items-description-api">
-                                <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>Machine learning alghorithmization model</p>
-                            </div>
-                            <div class="items-description-api">
                               <img src="img/icons/Selected.svg" alt="Icon-2">
-                              <p>Optimal load position</p>
+                              <p>Weight & volume calculation</p>
                             </div>
                             <div class="items-description-api">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>3D visualisation</p>
+                                <p>Machine learning ...</p>
                             </div>
 
                               <div class="items-description-api hidden-or-visible">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>Mixed sized products</p>
+                                <p>Optimal load position</p>
                             </div>
                             <div class="items-description-api hidden-or-visible">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>Unlimited products</p>
+                                <p>3D visualisation</p>
                             </div>
                             <div class="items-description-api hidden-or-visible">
                               <img src="img/icons/Selected.svg" alt="Icon-2">
-                              <p>Different container & vehicle types</p>
+                              <p>Mixed sized products</p>
                             </div>
+                            <div class="items-description-api hidden-or-visible">
+                            <img src="img/icons/Selected.svg" alt="Icon-2">
+                            <p>Unlimited list of products</p>
+                          </div>
                             <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
@@ -648,17 +644,12 @@ export const cardsData = {
       title: 'Web access',
       buttonText: '<a href="https://www.searates.com/services/distances-time" class="card-ref">How it works?</a>',
       description: `  <div class="trackingSystem-item-description">
-                            <p>Unlogged users can do 2 calculations per day for free</p>
                             <p>Register your account to search up to 20 routes per month for free (no more than 3 per day)</p>
-                            <p class="hidden-or-visible">To get more credits, annual packages, corporate subscription terms and SLA, please contact us.</p>
+                            <p>To get more credits, annual packages, corporate subscription terms and SLA, please contact us.</p>
                             <div class="description-counter">
-                              <div class="items-description-access hidden-or-visible">
-                                <img src="img/icons/Selected.svg" alt=""/>
-                                <p>From 20 up to 500 searches per month without daily limits can purchased online here</p>
-                              </div>
                               <div class="items-description-access">
                                 <img src="img/icons/Selected.svg" alt=""/>
-                                <p>Users who need to do up to 500 calculations per month without daily limits can purchase subscription here</p>
+                                <p>From 20 up to 500 searches per month without daily limits can purchased online here</p>
                               </div>
                               <div class="counter-price">
                                 <div class="counter">
@@ -678,7 +669,7 @@ export const cardsData = {
                         <span id="price-max">USD ${cardsDataController.res}</span>
                         <p class="per-month">per month</p>
                       </div>
-                      <button class="butt-start">Pay</button>
+                      <a class="butt-start button-pay">Pay</a>
                       <div class="ref-contact">
                         <a href="#">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
@@ -762,28 +753,28 @@ export const cardsData = {
                             </div>
                             <div class="items-description-api">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>Strongly optimize your supply chain</p>
+                                <p>Create your mobile application</p>
                             </div>
                             <div class="items-description-api">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>More than 150M nautical, air and land routes</p>
+                                <p>Optimize your supply chain in time and routes</p>
                             </div>
                             <div class="items-description-api">
                               <img src="img/icons/Selected.svg" alt="Icon-2">
-                              <p>Distance & transit time calculator</p>
+                              <p>150M+ nautical, air and land routes</p>
                             </div>
                             <div class="items-description-api hidden-or-visible">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>Setup preferable speed</p>
+                                <p>Distance & transit time calculator</p>
                             </div>
 
                               <div class="items-description-api hidden-or-visible">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>UN/Locode recognition</p>
+                                <p>Manage preferable transport speed</p>
                             </div>
                             <div class="items-description-api hidden-or-visible">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>Advanced autocomplete & geocoding</p>
+                                <p>UN/Locode recognition</p>
                             </div>
                           
                             <a href="#" class="href-features">See all features</a>
@@ -804,7 +795,7 @@ export const cardsData = {
   dfaMembership: [
     {
       title: 'Standard',
-      buttonText: 'How it works?',
+      buttonText: '<a href="#" class="card-ref">How it works?</a>',
       description: `   <div class="wrapper-items-description">
 
                               <div class="items-description-integration">
@@ -900,20 +891,15 @@ export const cardsData = {
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
                                 <a href="#"><u>SNPL</u></a>
                             </div>
-
-                            <div class="items-description-integration hidden-or-visible">
-                                <img src="img/icons/Selected.svg" alt="Icon-2">
-                                <p>Tracking analytics from Carriers</p>
-                            </div>
                             
                             <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
-      buttonText: 'How it works?',
+      buttonText: '<a href="#" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
                         <div class="price">
-                          <span id="price-max">USD 200</span>
+                          <span id="price-max">USD 299</span>
                           <p class="per-month">per month</p>
                         </div>
                         <button class="butt-contact">Join now</button>

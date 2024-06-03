@@ -138,7 +138,7 @@ export const otherFeaturesData = {
                           
                           <div class="items-description-integration">
                               <img src="img/icons/Selected.svg" alt="Icon-2">
-                              <p>CShipment journey events</p>
+                              <p>Shipment journey events</p>
                           </div>
 
                           <div class="items-description-integration">
@@ -151,7 +151,7 @@ export const otherFeaturesData = {
                           </div>
                           <div class="items-description-integration">
                             <img src="img/icons/Selected.svg" alt="Icon-2">
-                            <p>Location display on the world map</p>
+                            <p>Customizable search filter widget on your main page</p>
                           </div>
                         
                           <div class="items-description-integration">

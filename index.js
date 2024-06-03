@@ -83,6 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       item.classList.add('active');
       cardsDataController.activeApp = e.currentTarget.dataset.appName;
+
+      choices.setChoiceByValue(cardsDataController.activeApp); // Synchronize the select element with the button
+      cardsDataController.updateUrl();
+
       onRenderCards();
       onRenderCardsOther();
       onRenderDescription();
@@ -122,7 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
     allLinks.forEach((linksElement) => {
       linksElement.addEventListener('click', function (e) {
         e.preventDefault();
-        console.log('Hello');
         blockOther.scrollIntoView({ behavior: 'smooth' });
       });
     });
@@ -171,6 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
         counterElement.addEventListener('input', cardsDataController.onCounterInput);
       }
     }
+    cardsDataController.togglePayButton();
   };
 
   const onRenderDescription = () => {
@@ -210,6 +214,16 @@ document.addEventListener('DOMContentLoaded', function () {
     onRenderCards();
     onRenderCardsOther();
     onRenderDescription();
+
+    // Synchronize the buttons with the select element
+    buttonList.forEach((item) => {
+      item.classList.remove('active');
+      if (item.dataset.appName === cardsDataController.activeApp) {
+        item.classList.add('active');
+      }
+    });
+
+    cardsDataController.updateUrl();
   });
 
   cardsDataController.defineApp();
