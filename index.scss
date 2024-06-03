@@ -169,6 +169,7 @@ input[type='number'] {
 .choices__list {
   border-radius: 12px;
   width: 216px;
+  text-wrap: nowrap;
   @media (min-width: 768px) {
     width: 280px;
   }
