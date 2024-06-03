@@ -822,7 +822,7 @@ export const cardsData = {
                               </div>
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
-                                  <a href="#"><u>Events and Conferences</u></a>
+                                  <a href="https://www.df-alliance.com/events" target="_blank"><u>Events and Conferences</u></a>
                               </div>
 
                               <div class="items-description-integration">
@@ -832,7 +832,7 @@ export const cardsData = {
                             
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
-                                  <a href="#"><u>Closed Members’ Chat</u></a>
+                                  <p>Closed Members’ Chat</з>
                               </div>
 
                               <div class="items-description-integration">
@@ -843,16 +843,16 @@ export const cardsData = {
                               <div class="items-description-integration hidden-or-visible">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
                                 <p>Rates advertisement 
-                                on <a href="#"><u>SeaRates.com</u></a></p>
+                                on <a href="https://www.searates.com/" target="_blank"><u>SeaRates.com</u></a></p>
                             </div>
                           </div>
                         `,
       cardClass: 'card-web-access',
       downBlock: `
                       <p class="free-subtitle">Free</p>
-                      <button class="butt-start">Start now</button>
+                      <a href="https://www.df-alliance.com/auth/sign-in" target="_blank" class="butt-start">Start now</a>
                       <div class="ref-contact">
-                        <a href="#">Contact for more</a>
+                        <a href="https://www.df-alliance.com/company/contact-us" target="_blank">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
                       </div>
                     
@@ -870,7 +870,7 @@ export const cardsData = {
                               
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
-                                  <a href="#"><u>Container Tracking Web integration: 300 с/m</u></a>
+                                  <a href="https://www.df-alliance.com/benefits/digital-tools/tracking-system" target="_blank"><u>Container Tracking Web integration: 300 с/m</u></a>
                               </div>
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
@@ -911,7 +911,7 @@ export const cardsData = {
                           <span id="price-max">USD 299</span>
                           <p class="per-month">per month</p>
                         </div>
-                        <button class="butt-contact">Join now</button>
+                        <a href="https://www.df-alliance.com/auth/sign-up" target="_blank" class="butt-contact">Join now</a>
                           <div class="ref-documentation">
                             <a href="#">Documentation</a>
                             <img src="img/icons/arrow-blue.svg" alt="">
