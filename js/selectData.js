@@ -2,7 +2,7 @@ export const selectData = [
   {
     value: 'logisticsExplorer',
     label:
-      '<img src="img/icons/explorer.svg" alt="Icon-1" style="width: 24px; height: 24px;"><p>Logistics Explorer</p>',
+      '<img src="img/icons/logistics-explorer.svg" alt="Icon-1" style="width: 24px; height: 24px;"><p>Logistics Explorer</p>',
   },
   {
     value: 'trackingSystem',
