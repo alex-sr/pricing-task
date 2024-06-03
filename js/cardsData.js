@@ -20,7 +20,7 @@ export const cardsData = {
       cardClass: 'card-web-access',
       downBlock: `
             <p class="free-subtitle">Free</p>
-            <a class="butt-start" href="https://www.searates.com/freight/">Start now</a>
+            <a class="primary-btn" href="https://www.searates.com/freight/">Start now</a>
         
             <div class="ref-contact">
                 <a href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact for more</a>
@@ -88,7 +88,7 @@ export const cardsData = {
         '<a href="https://www.searates.com/integrations/logistics-explorer" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
-        <a class="butt-contact" href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact us</a>
+        <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact us</a>
         <div class="ref-documentation">
             <a href="https://docs.searates.com/guides/integrations/logistics-explorer">Documentation</a>
             <img src="img/icons/arrow-blue.svg" alt="">
@@ -141,7 +141,7 @@ export const cardsData = {
       cardClass: 'card-api',
       downBlock: `
                           
-                          <a class="butt-contact api" href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact us</a>
+                          <a class="primary-btn" href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact us</a>
                           <div class="ref-documentation api">
                             <a href="https://docs.searates.com/reference/logistics/v2/introduction">Documentation</a>
                             <img src="img/icons/arrow-black.svg" alt="">
@@ -184,7 +184,7 @@ export const cardsData = {
             <span id="price-max">USD ${cardsDataController.res}</span>
             <p class="per-month">per month</p>
         </div>
-        <a class="butt-start button-pay">Pay</a>
+        <a href="#" class="primary-btn button-pay">Pay</a>
         <div class="ref-contact">
             <a href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact for more</a>
             <img src="img/icons/arrow-black.svg" alt="">
@@ -246,7 +246,7 @@ export const cardsData = {
       buttonText: '<a href="https://www.searates.com/services/learn-more" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
-                        <a class="butt-contact" href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact us</a>
+                        <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact us</a>
                           <div class="ref-documentation">
                             <a href="https://docs.searates.com/guides/integrations/tracking">Documentation</a>
                             <img src="img/icons/arrow-blue.svg" alt="">
@@ -303,7 +303,7 @@ export const cardsData = {
       cardClass: 'card-api',
       downBlock: `
                           
-                          <a class="butt-contact api" href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact us</a>
+                          <a class="primary-btn" href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact us</a>
                           <div class="ref-documentation api">
                             <a href="https://docs.searates.com/reference/tracking/introduction">Documentation</a>
                             <img src="img/icons/arrow-black.svg" alt="">
@@ -342,7 +342,7 @@ export const cardsData = {
                         <span id="price-max">USD ${cardsDataController.res}</span>
                         <p class="per-month">per month</p>
                       </div>
-                      <a class="butt-start button-pay">Pay</a>
+                      <a href="#" class="primary-btn button-pay">Pay</a>
                       <div class="ref-contact">
                         <a href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
@@ -403,7 +403,7 @@ export const cardsData = {
       buttonText: '<a href="https://www.searates.com/services/schedules" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
-                        <a class="butt-contact" href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact us</a>
+                        <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact us</a>
                           <div class="ref-documentation">
                             <a href="#">Documentation</a>
                             <img src="img/icons/arrow-blue.svg" alt="">
@@ -460,7 +460,7 @@ export const cardsData = {
       cardClass: 'card-api',
       downBlock: `
                           
-                          <a class="butt-contact api" href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact us</a>
+                          <a class="primary-btn" href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact us</a>
                           <div class="ref-documentation api">
                             <a href="#">Documentation</a>
                             <img src="img/icons/arrow-black.svg" alt="">
@@ -498,7 +498,7 @@ export const cardsData = {
                         <span id="price-max">USD ${cardsDataController.res}</span>
                         <p class="per-month">per month</p>
                       </div>
-                      <a class="butt-start button-pay">Pay</a>
+                      <a href="#" class="primary-btn button-pay">Pay</a>
                       <div class="ref-contact">
                         <a href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
@@ -570,7 +570,7 @@ export const cardsData = {
       buttonText: '<a href="https://www.searates.com/reference/load-calc-about" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
-                        <a class="butt-contact" href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact us</a>
+                        <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact us</a>
                           <div class="ref-documentation">
                             <a href="https://docs.searates.com/guides/integrations/load-calculator">Documentation</a>
                             <img src="img/icons/arrow-blue.svg" alt="">
@@ -631,7 +631,7 @@ export const cardsData = {
       cardClass: 'card-api',
       downBlock: `
                           
-                          <a class="butt-contact api" href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact us</a>
+                          <a class="primary-btn" href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact us</a>
                           <div class="ref-documentation api">
                             <a href="https://docs.searates.com/reference/load-calculator/introduction">Documentation</a>
                             <img src="img/icons/arrow-black.svg" alt="">
@@ -669,7 +669,7 @@ export const cardsData = {
                         <span id="price-max">USD ${cardsDataController.res}</span>
                         <p class="per-month">per month</p>
                       </div>
-                      <a class="butt-start button-pay">Pay</a>
+                      <a href="#" class="primary-btn button-pay">Pay</a>
                       <div class="ref-contact">
                         <a href="#">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
@@ -731,7 +731,7 @@ export const cardsData = {
       buttonText: '<a href="https://www.searates.com/services/distances-time" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
-                        <a class="butt-contact" href="https://www.searates.com/services/request-it-quote?tool=Distance_and_time">Contact us</a>
+                        <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Distance_and_time">Contact us</a>
                           <div class="ref-documentation">
                             <a href="https://docs.searates.com/guides/integrations/distance-and-time">Documentation</a>
                             <img src="img/icons/arrow-blue.svg" alt="">
@@ -784,7 +784,7 @@ export const cardsData = {
       cardClass: 'card-api',
       downBlock: `
                           
-                          <a class="butt-contact api" href="https://www.searates.com/services/request-it-quote?tool=Distance_and_time">Contact us</a>
+                          <a class="primary-btn api" href="https://www.searates.com/services/request-it-quote?tool=Distance_and_time">Contact us</a>
                           <div class="ref-documentation api">
                             <a href="https://docs.searates.com/reference/distance/introduction">Documentation</a>
                             <img src="img/icons/arrow-black.svg" alt="">
@@ -841,7 +841,7 @@ export const cardsData = {
       cardClass: 'card-web-access',
       downBlock: `
                       <p class="free-subtitle">Free</p>
-                      <button class="butt-start">Start now</button>
+                      <button class="primary-btn">Start now</button>
                       <div class="ref-contact">
                         <a href="#">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
@@ -902,7 +902,7 @@ export const cardsData = {
                           <span id="price-max">USD 299</span>
                           <p class="per-month">per month</p>
                         </div>
-                        <button class="butt-contact">Join now</button>
+                        <button class="secondary-btn">Join now</button>
                           <div class="ref-documentation">
                             <a href="#">Documentation</a>
                             <img src="img/icons/arrow-blue.svg" alt="">

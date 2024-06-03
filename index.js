@@ -174,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function () {
         counterElement.addEventListener('input', cardsDataController.onCounterInput);
       }
     }
-    cardsDataController.togglePayButton();
   };
 
   const onRenderDescription = () => {

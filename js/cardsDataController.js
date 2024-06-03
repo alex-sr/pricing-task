@@ -1,8 +1,10 @@
+const PAYMENT_URL = 'https://www.searates.com/order';
+
 export const appPriceMap = {
-  trackingSystem: { price: 2, maxCounterValue: 100, minCounterValue: 4 },
-  shipSchedule: { price: 0.5, maxCounterValue: 500, minCounterValue: 50 },
-  loadCalculator: { price: 0.4, maxCounterValue: 500, minCounterValue: 20 },
-  distanceTime: { price: 0.3, maxCounterValue: 500, minCounterValue: 20 },
+  trackingSystem: { price: 2, maxCounterValue: 100, minCounterValue: 4, urlValue: 10 },
+  shipSchedule: { price: 0.5, maxCounterValue: 500, minCounterValue: 50, urlValue: 12 },
+  loadCalculator: { price: 0.4, maxCounterValue: 500, minCounterValue: 20, urlValue: 11 },
+  distanceTime: { price: 0.3, maxCounterValue: 500, minCounterValue: 20, urlValue: 14 },
 };
 
 const appUrlHashMap = {
@@ -19,6 +21,7 @@ class CardsDataController {
   counter = 0;
   price = 0;
   inputCounterElement = null;
+  payButtonElement = null;
   inputMaxValue = 100;
   inputMinValue = 0;
   activeApp = null;
@@ -61,6 +64,7 @@ class CardsDataController {
     this.inputMaxValue = appPriceMap[this.activeApp].maxCounterValue;
     this.inputMinValue = this.getAppMinCounterValue();
     this.inputCounterElement = document.getElementById('counter');
+    this.payButtonElement = document.querySelector('.button-pay');
     this.updateCounter();
   };
 
@@ -88,22 +92,40 @@ class CardsDataController {
       this.updateInputCounterElementValue(this.counter);
       this.res = (this.counter * this.price).toFixed(1).replace(/\.?0*$/, '');
       this.updatePriceElements();
-      ////////
-      this.togglePayButton();
+      this.defineIsCorrectCounterValue();
     }
   };
 
-  togglePayButton = () => {
-    const buttonPay = document.querySelectorAll('.button-pay');
-    buttonPay.forEach((button) => {
-      if (this.counter < this.inputMinValue) {
-        button.disabled = true;
-        button.style.cursor = 'not-allowed';
-      } else {
-        button.disabled = false;
-        button.style.cursor = 'pointer';
-      }
-    });
+  addUrlToPaymentButton = () => {
+    this.payButtonElement.href = this.getPaymentUrlLink();
+  };
+
+  removeUrlFromPaymentButton = () => {
+    this.payButtonElement.href = '#';
+  };
+
+  getPaymentUrlLink = () => {
+    if (this.counter < 10) {
+      return `${PAYMENT_URL}/${appPriceMap[this.activeApp].urlValue}00` + this.counter;
+    }
+    if (this.counter < 100) {
+      return `${PAYMENT_URL}/${appPriceMap[this.activeApp].urlValue}0` + this.counter;
+    }
+    if (this.counter >= 100) {
+      return `${PAYMENT_URL}/${appPriceMap[this.activeApp].urlValue}` + this.counter;
+    }
+    return PAYMENT_URL;
+  };
+
+  defineIsCorrectCounterValue = () => {
+    const button = document.querySelector('.button-pay');
+    if (this.counter < this.inputMinValue) {
+      button.classList.add('disabled');
+      this.removeUrlFromPaymentButton();
+    } else {
+      button.classList.remove('disabled');
+      this.addUrlToPaymentButton();
+    }
   };
 
   updateInputCounterElementValue = (value) => {
