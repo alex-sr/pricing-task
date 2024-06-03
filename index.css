@@ -229,6 +229,7 @@ input[type=number] {
   .items-type-program p {
     font-weight: 600;
     color: #000c37;
+    line-height: 1.57;
   }
 }
 
