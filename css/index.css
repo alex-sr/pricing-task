@@ -52,6 +52,64 @@ input[type=number] {
   margin: 0 auto;
 }
 
+.primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.52;
+  border-radius: 6px;
+  background: #000c37;
+  color: #fff;
+  padding: 8px 24px;
+  width: 100%;
+  transition: background 0.3s;
+}
+.primary-btn:hover {
+  background: #001357;
+}
+.primary-btn:active {
+  background: #000c37;
+}
+.primary-btn:focus {
+  outline: 2px solid #08f;
+}
+.primary-btn.disabled {
+  background: #c9cfdb;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.secondary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.52;
+  border-radius: 6px;
+  background: #08f;
+  color: #fff;
+  padding: 8px 24px;
+  width: 100%;
+  transition: background 0.3s;
+}
+.secondary-btn:hover {
+  background: #50adff;
+}
+.secondary-btn:active {
+  background: #006ff1;
+}
+.secondary-btn:focus {
+  outline: 2px solid #08f;
+}
+.secondary-btn.disabled {
+  cursor: not-allowed;
+  background: #c9cfdb;
+  pointer-events: none;
+}
+
 @media (min-width: 1200px) {
   .slider-container {
     display: flex;
@@ -420,20 +478,6 @@ input[type=number] {
   margin-bottom: 20px;
 }
 
-.butt-start {
-  display: flex;
-  justify-content: center;
-  padding: 8px 24px;
-  border-radius: 6px;
-  background: var(--Dubai-Default, #000c37);
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--Grey-Winter, #fff);
-  text-align: center;
-  margin: 0 auto;
-  width: 192px;
-}
-
 .ref-contact {
   display: flex;
   gap: 8px;
@@ -458,21 +502,6 @@ input[type=number] {
   font-weight: 600;
   color: #08f;
   margin-top: 12px;
-}
-
-.butt-contact {
-  border-radius: 6px;
-  background: var(--Future-Default, #08f);
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--Grey-Winter, #fff);
-  text-align: center;
-  padding: 8px 24px;
-  margin-top: 24px;
-}
-
-.butt-contact.api {
-  background: var(--Dubai-Default, #000c37);
 }
 
 .description-logistics-explorer {
