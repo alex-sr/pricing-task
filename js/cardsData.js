@@ -16,7 +16,7 @@ export const cardsData = {
             <img src="img/icons/water.svg" alt="">
         </div>
         `,
-      buttonText: '<a href="https://www.searates.com/freight/" class="card-ref">How it works?</a>',
+      buttonText: '<a href="https://www.searates.com/freight/" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-web-access',
       downBlock: `
             <p class="free-subtitle">Free</p>
@@ -85,7 +85,7 @@ export const cardsData = {
         </div>
         `,
       buttonText:
-        '<a href="https://www.searates.com/integrations/logistics-explorer" class="card-ref">How it works?</a>',
+        '<a href="https://www.searates.com/integrations/logistics-explorer" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact us</a>
@@ -137,7 +137,7 @@ export const cardsData = {
         </div>
         `,
       buttonText:
-        '<a href="https://www.searates.com/integrations/logistics-explorer" class="card-ref">How it works?</a>',
+        '<a href="https://www.searates.com/integrations/logistics-explorer" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-api',
       downBlock: `
                           
@@ -152,7 +152,7 @@ export const cardsData = {
   trackingSystem: [
     {
       title: 'Web access',
-      buttonText: '<a href="https://www.searates.com/freight/" class="card-ref">How it works?</a>',
+      buttonText: '<a href="https://www.searates.com/freight/"  target="_blank" class="card-ref">How it works?</a>',
       description: `  
         <div class="trackingSystem-item-description">
             <p>Unlogged users can track 1 shipment per day for free</p>
@@ -243,7 +243,8 @@ export const cardsData = {
                               <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
-      buttonText: '<a href="https://www.searates.com/services/learn-more" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/services/learn-more" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
                         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact us</a>
@@ -299,7 +300,8 @@ export const cardsData = {
                             <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
-      buttonText: '<a href="https://www.searates.com/reference/api-tracking-system" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/reference/api-tracking-system" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-api',
       downBlock: `
                           
@@ -315,7 +317,7 @@ export const cardsData = {
     {
       title: 'Web access',
       buttonText:
-        '<a href="https://www.searates.com/schedules?searchType=by_points" class="card-ref">How it works?</a>',
+        '<a href="https://www.searates.com/schedules?searchType=by_points" target="_blank" class="card-ref">How it works?</a>',
       description: `  <div class="trackingSystem-item-description">
                             <p>Register your profile with Searates to make 50 free searches of the schedules per month (but not more than 5 per day).</p>
                             <p class="hidden-or-visible">To get more credits, annual packages, corporate subscription terms and SLA, please contact us.</p>
@@ -400,7 +402,8 @@ export const cardsData = {
                               <a href="#" class="href-features">See all features</a>
                             </div>
                             `,
-      buttonText: '<a href="https://www.searates.com/services/schedules" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/services/schedules" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
                         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact us</a>
@@ -456,7 +459,8 @@ export const cardsData = {
                             <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
-      buttonText: '<a href="https://www.searates.com/reference/api-ship-schedule" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/reference/api-ship-schedule" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-api',
       downBlock: `
                           
@@ -471,7 +475,8 @@ export const cardsData = {
   loadCalculator: [
     {
       title: 'Web access',
-      buttonText: '<a href="https://www.searates.com/load-calculator/" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/load-calculator/" target="_blank" class="card-ref">How it works?</a>',
       description: `  <div class="trackingSystem-item-description">
                             <p>Register your account to make up to 20 stuffing calculations per month for free (no more than 3 per day)</p>
                             <p class="hidden-or-visible">To get more credits, annual packages, corporate subscription terms and SLA, please contact us.</p>
@@ -562,12 +567,13 @@ export const cardsData = {
                             <div class="items-description-integration hidden-or-visible">
                               <img src="img/icons/Selected.svg" alt="Icon-2">
                               <p>Palletizing option</p>
-                            </div>
+                            </div> 
                             
                             <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
-      buttonText: '<a href="https://www.searates.com/reference/load-calc-about" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/reference/load-calc-about" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
                         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact us</a>
@@ -627,7 +633,7 @@ export const cardsData = {
                           </div>
                             `,
       buttonText:
-        '<a href="https://www.searates.com/integrations/api-load-calculator/" class="card-ref">How it works?</a>',
+        '<a href="https://www.searates.com/integrations/api-load-calculator/" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-api',
       downBlock: `
                           
@@ -642,7 +648,8 @@ export const cardsData = {
   distanceTime: [
     {
       title: 'Web access',
-      buttonText: '<a href="https://www.searates.com/services/distances-time" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/services/distances-time" target="_blank" class="card-ref">How it works?</a>',
       description: `  <div class="trackingSystem-item-description">
                             <p>Register your account to search up to 20 routes per month for free (no more than 3 per day)</p>
                             <p>To get more credits, annual packages, corporate subscription terms and SLA, please contact us.</p>
@@ -728,7 +735,8 @@ export const cardsData = {
                             <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
-      buttonText: '<a href="https://www.searates.com/services/distances-time" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/services/distances-time" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
                         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Distance_and_time">Contact us</a>
@@ -780,7 +788,8 @@ export const cardsData = {
                             <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
-      buttonText: '<a href="https://www.searates.com/reference/api-distances-time" class="card-ref">How it works?</a>',
+      buttonText:
+        '<a href="https://www.searates.com/reference/api-distances-time" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-api',
       downBlock: `
                           
@@ -795,7 +804,7 @@ export const cardsData = {
   dfaMembership: [
     {
       title: 'Standard',
-      buttonText: '<a href="#" class="card-ref">How it works?</a>',
+      buttonText: '<a href="https://www.df-alliance.com/benefits" target="_blank" class="card-ref">How it works?</a>',
       description: `   <div class="wrapper-items-description">
 
                               <div class="items-description-integration">
@@ -813,7 +822,7 @@ export const cardsData = {
                               </div>
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
-                                  <a href="#"><u>Events and Conferences</u></a>
+                                  <a href="https://www.df-alliance.com/events" target="_blank"><u>Events and Conferences</u></a>
                               </div>
 
                               <div class="items-description-integration">
@@ -823,7 +832,7 @@ export const cardsData = {
                             
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
-                                  <a href="#"><u>Closed Members’ Chat</u></a>
+                                  <p>Closed Members’ Chat</з>
                               </div>
 
                               <div class="items-description-integration">
@@ -834,16 +843,16 @@ export const cardsData = {
                               <div class="items-description-integration hidden-or-visible">
                                 <img src="img/icons/Selected.svg" alt="Icon-2">
                                 <p>Rates advertisement 
-                                on <a href="#"><u>SeaRates.com</u></a></p>
+                                on <a href="https://www.searates.com/" target="_blank"><u>SeaRates.com</u></a></p>
                             </div>
                           </div>
                         `,
       cardClass: 'card-web-access',
       downBlock: `
                       <p class="free-subtitle">Free</p>
-                      <button class="primary-btn">Start now</button>
+                      <a href="https://www.df-alliance.com/auth/sign-in" target="_blank" class="primary-btn">Start now</a>
                       <div class="ref-contact">
-                        <a href="#">Contact for more</a>
+                        <a href="https://www.df-alliance.com/company/contact-us" target="_blank">Contact for more</a>
                         <img src="img/icons/arrow-black.svg" alt="">
                       </div>
                     
@@ -861,7 +870,7 @@ export const cardsData = {
                               
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
-                                  <a href="#"><u>Container Tracking Web integration: 300 с/m</u></a>
+                                  <a href="https://www.df-alliance.com/benefits/digital-tools/tracking-system" target="_blank"><u>Container Tracking Web integration: 300 с/m</u></a>
                               </div>
                               <div class="items-description-integration">
                                   <img src="img/icons/Selected.svg" alt="Icon-2">
@@ -895,14 +904,14 @@ export const cardsData = {
                             <a href="#" class="href-features">See all features</a>
                           </div>
                             `,
-      buttonText: '<a href="#" class="card-ref">How it works?</a>',
+      buttonText: '<a href="https://www.df-alliance.com/benefits" target="_blank" class="card-ref">How it works?</a>',
       cardClass: 'card-web-integration',
       downBlock: `
                         <div class="price">
                           <span id="price-max">USD 299</span>
                           <p class="per-month">per month</p>
                         </div>
-                        <button class="secondary-btn">Join now</button>
+                        <a href="https://www.df-alliance.com/auth/sign-up" target="_blank" class="secondary-btn">Join now</a>
                           <div class="ref-documentation">
                             <a href="#">Documentation</a>
                             <img src="img/icons/arrow-blue.svg" alt="">
