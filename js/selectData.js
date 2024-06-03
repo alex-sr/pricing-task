@@ -2,7 +2,7 @@ export const selectData = [
   {
     value: 'logisticsExplorer',
     label:
-      '<img src="img/icons/logistics-explorerIcon.svg" alt="Icon-1" style="width: 24px; height: 24px;"><p>Logistics Explorer</p>',
+      '<img src="img/icons/logisticsExplorerIcon.svg" alt="Icon-1" style="width: 24px; height: 24px;"><p>Logistics Explorer</p>',
   },
   {
     value: 'trackingSystem',
@@ -25,6 +25,6 @@ export const selectData = [
   {
     value: 'dfaMembership',
     label:
-      '<img src="img/icons/dfa-membershipIcon.svg" alt="Icon-5" style="width: 24px; height: 24px;"><p>DFA Membership</p>',
+      '<img src="img/icons/dfaMembershipIcon.svg" alt="Icon-5" style="width: 24px; height: 24px;"><p>DFA Membership</p>',
   },
 ];

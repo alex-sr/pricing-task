@@ -160,6 +160,7 @@ input[type='number'] {
 .choices__inner {
   border: none;
   border-radius: 50px;
+  background: #fff;
 }
 
 .is-open .choices__inner {
@@ -202,6 +203,7 @@ input[type='number'] {
 .items-type-program.active {
   @media (min-width: 1200px) {
     background: #fff;
+    box-shadow: 0px 4px 15px 0px rgba(58, 112, 191, 0.1);
   }
 }
 
@@ -230,8 +232,7 @@ input[type='number'] {
     gap: 8px;
     padding: 8px 16px;
     border-radius: 50px;
-    background: rgba(236, 236, 236, 0.4);
-    box-shadow: 0px 4px 15px 0px rgba(58, 112, 191, 0.1);
+    background: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -325,7 +326,7 @@ input[type='number'] {
     height: 17px;
     margin-top: 0;
     &::after {
-      font-size: 10px;
+      font-size: 20px;
       color: #6e7e92;
     }
   }
