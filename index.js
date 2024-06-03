@@ -78,11 +78,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   buttonList.forEach((item) => {
     item.addEventListener('click', (e) => {
+      const appName = e.currentTarget.dataset.appName;
+      if (appName === cardsDataController.activeApp) return;
+
       buttonList.forEach((otherItem) => {
         otherItem.classList.remove('active');
       });
       item.classList.add('active');
-      cardsDataController.activeApp = e.currentTarget.dataset.appName;
+      cardsDataController.activeApp = appName;
 
       choices.setChoiceByValue(cardsDataController.activeApp); // Synchronize the select element with the button
       cardsDataController.updateUrl();
@@ -210,7 +213,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const selectElement = document.getElementById('selectElement');
 
   selectElement.addEventListener('change', (e) => {
-    cardsDataController.activeApp = e.detail.value;
+    const appName = e.detail.value;
+    if (appName === cardsDataController.activeApp) return;
+
+    cardsDataController.activeApp = appName;
     onRenderCards();
     onRenderCardsOther();
     onRenderDescription();
