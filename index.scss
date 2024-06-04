@@ -478,11 +478,15 @@ input[type='number'] {
 }
 
 .ref-contact {
-  display: flex;
-  gap: 8px;
   margin-top: 16px;
-  color: #000c37;
+  color: #00371b;
   font-weight: 600;
+}
+
+.ref-contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .ref-documentation {
@@ -495,6 +499,12 @@ input[type='number'] {
 
 .ref-documentation.api {
   color: var(--Dubai-Default, #000c37);
+}
+
+.ref-documentation a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .href-features {

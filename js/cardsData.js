@@ -23,8 +23,9 @@ export const cardsData = {
             <a class="primary-btn" href="https://www.searates.com/freight/">Start now</a>
         
             <div class="ref-contact">
-                <a href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact for more</a>
-                <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                <a href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer" target="_blank">Contact for more
+                 <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                </a>
             </div>
     `,
     },
@@ -90,8 +91,10 @@ export const cardsData = {
       downBlock: `
         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact us</a>
         <div class="ref-documentation">
-            <a href="https://docs.searates.com/guides/integrations/logistics-explorer">Documentation</a>
-            <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
+            <a href="https://docs.searates.com/guides/integrations/logistics-explorer">Documentation
+             <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
+            </a>
+           
         </div>
         `,
     },
@@ -147,9 +150,11 @@ export const cardsData = {
                           
                           <a class="primary-btn" href="https://www.searates.com/services/request-it-quote?tool=Logistics_Explorer">Contact us</a>
                           <div class="ref-documentation api">
-                            <a href="https://docs.searates.com/reference/logistics/v2/introduction">Documentation</a>
+                            <a href="https://docs.searates.com/reference/logistics/v2/introduction">Documentation
                             <img src="img/icons/arrow-blackIcon.svg" alt="">
-                          </div>
+                            </a>
+                          </div>  
+                          
                     `,
     },
   ],
@@ -190,8 +195,9 @@ export const cardsData = {
         </div>
         <a href="#" class="primary-btn button-pay">Pay</a>
         <div class="ref-contact">
-            <a href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact for more</a>
-            <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+            <a href="https://www.searates.com/services/request-it-quote?tool=Tracking_system" ref-contact>Contact for more
+             <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+            </a>
         </div>
         `,
     },
@@ -253,9 +259,11 @@ export const cardsData = {
       downBlock: `
                         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact us</a>
                           <div class="ref-documentation">
-                            <a href="https://docs.searates.com/guides/integrations/tracking">Documentation</a>
-                            <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
-                          </div>
+                            <a href="https://docs.searates.com/guides/integrations/tracking">Documentation
+                              <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
+                            </a>
+                          </div>  
+                          
                     `,
     },
     {
@@ -311,9 +319,11 @@ export const cardsData = {
                           
                           <a class="primary-btn" href="https://www.searates.com/services/request-it-quote?tool=Tracking_system">Contact us</a>
                           <div class="ref-documentation api">
-                            <a href="https://docs.searates.com/reference/tracking/introduction">Documentation</a>
-                            <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
-                          </div>
+                            <a href="https://docs.searates.com/reference/tracking/introduction">Documentation
+                              <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                            </a>
+                          </div>  
+                          
                     `,
     },
   ],
@@ -350,9 +360,10 @@ export const cardsData = {
                       </div>
                       <a href="#" class="primary-btn button-pay">Pay</a>
                       <div class="ref-contact">
-                        <a href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact for more</a>
-                        <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
-                      </div>
+                        <a href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact for more
+                          <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                        </a>
+                     </div>
                     
                 `,
     },
@@ -412,9 +423,11 @@ export const cardsData = {
       downBlock: `
                         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact us</a>
                           <div class="ref-documentation">
-                            <a href="https://www.searates.com/about/manual#ship-shedules" target="_blank">Documentation</a>
-                            <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
-                          </div>
+                            <a href="https://www.searates.com/about/manual#ship-shedules" target="_blank">Documentation
+                              <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
+                            </a>
+                          </div>  
+                          
                     `,
     },
     {
@@ -470,9 +483,11 @@ export const cardsData = {
                           
                           <a class="primary-btn" href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules">Contact us</a>
                           <div class="ref-documentation api">
-                            <a href="https://docs.searates.com/reference/schedules/introduction" target="_blank">Documentation</a>
-                            <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
-                          </div>
+                            <a href="https://docs.searates.com/reference/schedules/introduction" target="_blank">Documentation
+                             <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                            </a>
+                          </div> 
+                          
                     `,
     },
   ],
@@ -509,8 +524,9 @@ export const cardsData = {
                       </div>
                       <a href="#" class="primary-btn button-pay">Pay</a>
                       <div class="ref-contact">
-                        <a href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact for more</a>
-                        <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                        <a href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact for more
+                         <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                        </a>
                       </div>
                     
                 `,
@@ -582,9 +598,11 @@ export const cardsData = {
       downBlock: `
                         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact us</a>
                           <div class="ref-documentation">
-                            <a href="https://docs.searates.com/guides/integrations/load-calculator">Documentation</a>
-                            <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
-                          </div>
+                            <a href="https://docs.searates.com/guides/integrations/load-calculator">Documentation
+                             <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
+                            </a>
+                          </div> 
+                          
                     `,
     },
     {
@@ -643,9 +661,11 @@ export const cardsData = {
                           
                           <a class="primary-btn" href="https://www.searates.com/services/request-it-quote?tool=Load_Calculator">Contact us</a>
                           <div class="ref-documentation api">
-                            <a href="https://docs.searates.com/reference/load-calculator/introduction">Documentation</a>
-                            <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
-                          </div>
+                            <a href="https://docs.searates.com/reference/load-calculator/introduction">Documentation
+                              <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                            </a>
+                           </div>  
+                         
                     `,
     },
   ],
@@ -682,9 +702,11 @@ export const cardsData = {
                       </div>
                       <a href="#" class="primary-btn button-pay">Pay</a>
                       <div class="ref-contact">
-                        <a href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules" target="_blank">Contact for more</a>
+                        <a href="https://www.searates.com/services/request-it-quote?tool=Ship_Schedules" target="_blank">Contact for more
                         <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
-                      </div>
+                        </a>
+                      </div>  
+                      
                     
                 `,
     },
@@ -745,9 +767,11 @@ export const cardsData = {
       downBlock: `
                         <a class="secondary-btn" href="https://www.searates.com/services/request-it-quote?tool=Distance_and_time">Contact us</a>
                           <div class="ref-documentation">
-                            <a href="https://docs.searates.com/guides/integrations/distance-and-time">Documentation</a>
-                            <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
-                          </div>
+                            <a href="https://docs.searates.com/guides/integrations/distance-and-time">Documentation
+                              <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
+                            </a>
+                         </div>  
+                        
                     `,
     },
     {
@@ -799,9 +823,11 @@ export const cardsData = {
                           
                           <a class="primary-btn api" href="https://www.searates.com/services/request-it-quote?tool=Distance_and_time">Contact us</a>
                           <div class="ref-documentation api">
-                            <a href="https://docs.searates.com/reference/distance/introduction">Documentation</a>
-                            <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
-                          </div>
+                            <a href="https://docs.searates.com/reference/distance/introduction">Documentation
+                              <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
+                            </a>
+                          </div>  
+                          
                     `,
     },
   ],
@@ -856,9 +882,11 @@ export const cardsData = {
                       <p class="free-subtitle">Free</p>
                       <a href="https://www.df-alliance.com/auth/sign-in" target="_blank" class="primary-btn">Start now</a>
                       <div class="ref-contact">
-                        <a href="https://www.df-alliance.com/company/contact-us" target="_blank">Contact for more</a>
+                        <a href="https://www.df-alliance.com/company/contact-us" target="_blank">Contact for more
                         <img src="img/icons/arrow-blackIcon.svg" alt="arrow-black">
-                      </div>
+                        </a>
+                       </div>  
+                     
                     
                 `,
     },
@@ -917,9 +945,11 @@ export const cardsData = {
                         </div>
                         <a href="https://www.df-alliance.com/auth/sign-up" target="_blank" class="secondary-btn">Join now</a>
                           <div class="ref-documentation">
-                            <a href="#">Documentation</a>
-                            <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
-                          </div>
+                            <a href="#">Documentation
+                             <img src="img/icons/arrow-blueIcon.svg" alt="arrow-blue">
+                            </a>
+                           </div> 
+                         
                     `,
     },
   ],
